@@ -1,6 +1,6 @@
-# @pakage CppDB
+# @pakage KaliDB
 >
 >### @brief The fast Data Base.
 >
->>Powered by C++/Boost
+>>Powered by **std c++11** and **boost**
 >
