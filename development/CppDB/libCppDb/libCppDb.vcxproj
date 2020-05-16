@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B308F172-4BD0-4ADA-9C94-1A6F5B673CCE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libCppDb</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>E:\projects\CppDB\libCppDb\include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CppDb\AbstractContainerDefinition.hpp" />
+    <ClInclude Include="include\CppDb\Allocator.hpp" />
+    <ClInclude Include="include\CppDb\Atom.hpp" />
+    <ClInclude Include="include\CppDb\ControllInformation.hpp" />
+    <ClInclude Include="include\CppDb\ControllInformationFwd.hpp" />
+    <ClInclude Include="include\CppDb\details\AtomUtils.hpp" />
+    <ClInclude Include="include\CppDb\details\BaseDataBase.hpp" />
+    <ClInclude Include="include\CppDb\details\BaseDataBaseFwd.hpp" />
+    <ClInclude Include="include\CppDb\details\Bytes.hpp" />
+    <ClInclude Include="include\CppDb\details\ConcreteDataBase.hpp" />
+    <ClInclude Include="include\CppDb\details\ControllInformationHolder.hpp" />
+    <ClInclude Include="include\CppDb\details\CrcTypes.hpp" />
+    <ClInclude Include="include\CppDb\details\FileSystemPresenter.hpp" />
+    <ClInclude Include="include\CppDb\details\IPermanentAccess.hpp" />
+    <ClInclude Include="include\CppDb\details\MappedFileBase.hpp" />
+    <ClInclude Include="include\CppDb\details\MappedFileReadOnly.hpp" />
+    <ClInclude Include="include\CppDb\details\MappedFileReadWrite.hpp" />
+    <ClInclude Include="include\CppDb\details\MappedFileSkeletons.hpp" />
+    <ClInclude Include="include\CppDb\details\Memory.hpp" />
+    <ClInclude Include="include\CppDb\details\PeriodicTimer.hpp" />
+    <ClInclude Include="include\CppDb\details\SingletonTemplate.hpp" />
+    <ClInclude Include="include\CppDb\Exception.hpp" />
+    <ClInclude Include="include\CppDb\FileSystemStructure.hpp" />
+    <ClInclude Include="include\CppDb\FileSystemStructureFwd.hpp" />
+    <ClInclude Include="include\CppDb\IControllInformationHolder.hpp" />
+    <ClInclude Include="include\CppDb\IControllInformationHolderFwd.hpp" />
+    <ClInclude Include="include\CppDb\IDataBase.hpp" />
+    <ClInclude Include="include\CppDb\IDataBaseFwd.hpp" />
+    <ClInclude Include="include\CppDb\IFileSystemPresenter.hpp" />
+    <ClInclude Include="include\CppDb\IFileSystemPresenterFwd.hpp" />
+    <ClInclude Include="include\CppDb\Manager.hpp" />
+    <ClInclude Include="include\CppDb\ManagerFwd.hpp" />
+    <ClInclude Include="include\CppDb\Session.hpp" />
+    <ClInclude Include="include\CppDb\SessionFwd.hpp" />
+    <ClInclude Include="include\CppDb\Version.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\AtomUtils.cpp" />
+    <ClCompile Include="source\BaseDataBase.cpp" />
+    <ClCompile Include="source\ControllInformation.cpp" />
+    <ClCompile Include="source\ControllInformationHolder.cpp" />
+    <ClCompile Include="source\Exception.cpp" />
+    <ClCompile Include="source\FileSystemPresenter.cpp" />
+    <ClCompile Include="source\FileSystemStructure.cpp" />
+    <ClCompile Include="source\IControllInformationHolder.cpp" />
+    <ClCompile Include="source\IDataBase.cpp" />
+    <ClCompile Include="source\IFileSystemPresenter.cpp" />
+    <ClCompile Include="source\IPermanentAccess.cpp" />
+    <ClCompile Include="source\Manager.cpp" />
+    <ClCompile Include="source\MappedFileBase.cpp" />
+    <ClCompile Include="source\MappedFileReadOnly.cpp" />
+    <ClCompile Include="source\MappedFileReadWrite.cpp" />
+    <ClCompile Include="source\PeriodicTimer.cpp" />
+    <ClCompile Include="source\Session.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

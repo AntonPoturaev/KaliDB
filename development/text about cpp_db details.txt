@@ -1,0 +1,42 @@
+How it worked?
+
+The file is allocated on a hard drive. Size of this file equivalent to minimum value of PageSize - 65kB by default. This value should be is specified at compile time. DB driver loads the file into ROM using a very efficient system mechanism - "memory mapped file". This memory used in memory allocation algorythm as heap. In this way, allocation of any data, via specific allocator object, in context of DB, is placed directly in the file. Consequently - there is no need to in serialize/deserialize/caching of data. 
+Any threads, uses this DB, syncs via named read/write mutex - many readers, one writer. An operation with DB executing in a transaction scope (read/write).
+In case when lack of memory - all contexts (memory algorithms, allocators, file mappings, etc..) are destroyed. DB driver trying to grow size of file to old size + PageSize. This operation repeated TryToAllocateCount - default value 3. This value should be is specified at compile time. In bad case - file system does not provide needed chunk of memory, DB driver generate FatalError exception and works should be stopped.
+Backup DB is performed by timer, provided that the data changed since the last tick of timer. Value for timer tick setted in nanoseconds via value BackupTimeout - default value 1800000000000 ns == 30m. This value should be is specified at compile time. Is also calculated and stored checksums - CRC32.
+
+We use for implement DB driver:
+ - boost library
+	- interprocess
+	- exception
+	- asio
+	- container
+	- multi_index
+	- multi_index_container
+	- thread
+	- utility
+	- crc
+	- filesystem
+	- format
+	- iterator_range
+	- optional
+	- numeric_conversion
+	- uuid
+	- scope_exit
+	- bind
+	- signal2
+	- integer
+	
+ - std/stl/c++11
+	- thread
+	- mutex
+	- atomic
+	- containers
+	- type_traits/mpl
+	- memory/r-value/smart_pointers
+	- functional/biners
+	- chrono
+	- exception
+	- hash
+	
+	

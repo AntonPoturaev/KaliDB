@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sdtafx">
+      <UniqueIdentifier>{26116790-80ba-4e57-bdd8-c6bbc2e33a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{343cff39-b4ce-4aa2-a52a-5a953480384b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{d5639122-d556-4312-aa05-8e867463feaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\details">
+      <UniqueIdentifier>{300f16ba-75f9-44e4-80b8-f08e5e16da48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>sdtafx</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>sdtafx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\AbstractContainerDefinition.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\Allocator.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\Atom.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\ControllInformation.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\ControllInformationFwd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\Exception.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\FileSystemStructure.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\FileSystemStructureFwd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\IControllInformationHolder.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\IControllInformationHolderFwd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\IDataBase.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\IDataBaseFwd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\IFileSystemPresenter.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\IFileSystemPresenterFwd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\Manager.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\ManagerFwd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\Session.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\SessionFwd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\Version.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\Bytes.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\CrcTypes.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\MappedFileBase.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\MappedFileReadOnly.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\MappedFileReadWrite.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\MappedFileSkeletons.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\Memory.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\PeriodicTimer.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\SingletonTemplate.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\AtomUtils.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\BaseDataBase.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\BaseDataBaseFwd.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\ConcreteDataBase.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\ControllInformationHolder.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\FileSystemPresenter.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppDb\details\IPermanentAccess.hpp">
+      <Filter>include\details</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>sdtafx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AtomUtils.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BaseDataBase.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ControllInformation.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ControllInformationHolder.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Exception.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FileSystemPresenter.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FileSystemStructure.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IControllInformationHolder.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IDataBase.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IFileSystemPresenter.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IPermanentAccess.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MappedFileBase.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MappedFileReadOnly.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MappedFileReadWrite.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PeriodicTimer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Session.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
