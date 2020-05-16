@@ -1,2 +1,6 @@
-# CppDB
-The fast Data Base. Powered by C++/Boost
+# @pakage CppDB
+>
+>### @brief The fast Data Base.
+>
+>>Powered by C++/Boost
+>
